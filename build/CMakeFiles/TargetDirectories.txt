@@ -1,0 +1,3 @@
+D:/school_assignment/couse_design/elec_seal_system/build/CMakeFiles/seal.dir
+D:/school_assignment/couse_design/elec_seal_system/build/CMakeFiles/edit_cache.dir
+D:/school_assignment/couse_design/elec_seal_system/build/CMakeFiles/rebuild_cache.dir
