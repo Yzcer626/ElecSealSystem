@@ -1,6 +1,6 @@
 # CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
-project(ElecSealSystem VERSION 1.0 LANGUAGES CXX)
+project(ElecSealSystem VERSION 1.1 LANGUAGES CXX)
 
 # 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 11)
@@ -19,6 +19,7 @@ set(SOURCES
     seal.cpp
     gainchar_bytxt.cpp
     bmpbuild.cpp
+    seal_generator.cpp
 )
 
 # 创建可执行文件
@@ -26,7 +27,7 @@ add_executable(seal ${SOURCES})
 
 # Windows 平台链接必要的库
 if(WIN32)
-    target_link_libraries(seal kernel32 user32 gdi32)
+    target_link_libraries(seal kernel32 user32 gdi32 shell32)
 endif()
 
 # 设置编译选项
